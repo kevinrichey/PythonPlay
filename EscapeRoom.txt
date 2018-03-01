@@ -1,0 +1,49 @@
+
+How to Play Escape Room Game in Python
+========================================
+
+## Run
+
+Requires Python 3.6.
+
+Command Line:
+
+> python EscapeRoom.py
+
+## Setup
+
+You are trapped in a room. There are **fixtures** to interact with, **items** to pickup.
+
+Find a way to get out of the room.
+
+## Rules
+
+Use one and two word commands.
+
+Single-word commands:
+
+ - **status** - See your inventory and list of available fixtures.
+ - **quit** - End the game early.
+
+Interact with fixtures in the room with two-word "action subject" commands. Here are some common commands:
+
+ - **inspect** - Look closely at the fixture. Example: "inspect room"
+ - **open** - Open a closed fixture. Example: "open drawer"
+ - **close** - Close a fixture. Example: "close safe"
+
+Inspecting a fixture may reveal new fixtures or items. You cannot interact with a fixture until you discover it through inspection. 
+For example, you cannot jump ahead and type "open drawer" before you have inspected the desk.
+
+Finding an item will automatically add it to you inventory.
+
+Using items is automatic. You just need to have the item in your possession for it to work. 
+If you have the correct item in your possession 
+When you interact with a fixture that requires an item and you have that item in your inventory,
+the fixture command will just use the item. 
+For example, if you have the code, then you will automatically use the code when you type "open safe". 
+
+The game will end when you find the escape.
+
+There are no dead-ends, killing moves, or failure options.
+
+<!-- vim:set ft=markdown: -->
