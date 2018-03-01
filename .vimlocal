@@ -1,0 +1,23 @@
+
+" Spacing, Formatting, Highlighting
+"   Auto indent 2, spaces (!tabs) 
+
+set tabstop=2
+set shiftwidth=2
+set autoindent
+set expandtab
+set linebreak!
+set wrap!
+set ignorecase!
+
+" Source folding
+
+set foldenable
+set foldmethod=syntax
+set foldlevel=1
+set foldlevelstart=1
+
+" Compiling, Testing, Debugging
+nnoremap <F5> :!python3.6.exe %<CR>
+
+" vim:ft=vim:
