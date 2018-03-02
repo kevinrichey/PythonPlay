@@ -118,7 +118,7 @@ while True:
 
     elif command == "status":
         print("You are carrying",inventory)
-        print("You found %s" % *fixtures.keys())
+        print("You found %s" % list(fixtures.keys()))
 
     else:
         print("Unknown command:",command)
